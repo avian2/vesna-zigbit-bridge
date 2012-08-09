@@ -1,9 +1,9 @@
 This is program bridges the serial line on the radio connector (USART3,
 pins 9, 11) and RS-232 debug port on VESNA.
 
-Specifically it allows direct communication with the ZigBit
-SerialNet module on a SNR-MOD radio board for debugging or firmware
-reprogramming.
+Specifically it allows direct communication with the ZigBit SerialNet
+module on a SNR-MOD radio board from a terminal emulator program for
+debugging or firmware reprogramming.
 
 To compile:
 
