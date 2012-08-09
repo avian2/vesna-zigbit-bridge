@@ -52,7 +52,7 @@ void setup(void)
 		      GPIO_CNF_INPUT_FLOAT, GPIO10);
 
 	/* Setup USART parameters. */
-	usart_set_baudrate(USART1, 115200);
+	usart_set_baudrate(USART1, 38400);
 	usart_set_databits(USART1, 8);
 	usart_set_stopbits(USART1, USART_STOPBITS_1);
 	usart_set_parity(USART1, USART_PARITY_NONE);
@@ -90,7 +90,8 @@ void setup(void)
 	usart_set_databits(USART3, 8);
 	usart_set_stopbits(USART3, USART_STOPBITS_1);
 	usart_set_parity(USART3, USART_PARITY_NONE);
-	usart_set_flow_control(USART3, USART_FLOWCONTROL_RTS_CTS);
+	//usart_set_flow_control(USART3, USART_FLOWCONTROL_RTS_CTS);
+	usart_set_flow_control(USART3, USART_FLOWCONTROL_NONE);
 	usart_set_mode(USART3, USART_MODE_TX_RX);
 
 	USART3_CR1 |= USART_CR1_RXNEIE;

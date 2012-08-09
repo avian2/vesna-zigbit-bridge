@@ -13,7 +13,7 @@ To flash using OpenOCD and Olimex ARM-USB-OCD:
 
 $ make zigbit-bridge.u
 
-Use a serial terminal emulator to connect to VESNA's debug port. Use 115200
+Use a serial terminal emulator to connect to VESNA's debug port. Use 38400
 baud, 8 data bits, no parity, 1 stop bit.
 
 
