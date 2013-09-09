@@ -144,7 +144,11 @@ int main(void)
 {
 	setup();
 
-	printf("Boot\n");
+	const char *hello = "zigbit-bridge boot\n";
+	int n;
+	for(n = 0; n < strlen(hello); n++) {
+		usart_send_blocking(USART1, hello[n]);
+	}
 
 	while(1) {
 		char c;
