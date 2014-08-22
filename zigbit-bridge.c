@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <errno.h>
+#include <string.h>
 #include <libopencm3/stm32/f1/rcc.h>
 #include <libopencm3/stm32/f1/gpio.h>
 #include <libopencm3/stm32/usart.h>
@@ -145,7 +146,7 @@ int main(void)
 	setup();
 
 	const char *hello = "zigbit-bridge boot\n";
-	int n;
+	size_t n;
 	for(n = 0; n < strlen(hello); n++) {
 		usart_send_blocking(USART1, hello[n]);
 	}
